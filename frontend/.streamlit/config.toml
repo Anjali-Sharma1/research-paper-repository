@@ -1,0 +1,11 @@
+# Streamlit theme colours, layout settings and server options.
+
+# Pinned to light so the app never inherits a dark OS theme - the screens force a
+# white background, and tables and metrics take their colour from here, not CSS.
+[theme]
+base = "light"
+primaryColor = "#3538CD"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F7F9FC"
+textColor = "#101828"
+font = "sans serif"
