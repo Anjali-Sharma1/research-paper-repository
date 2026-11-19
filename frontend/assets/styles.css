@@ -1,0 +1,15 @@
+/* Custom CSS to restyle Streamlit components and match the project theme. */
+
+/* app.py loads this on every screen, so the ink colours below are the app-wide
+   default. Keep colours on classes, not on bare elements, so page styles and
+   coloured badges keep working. */
+:root { --ink:#1D2939; --ink-strong:#101828; --ink-muted:#667085; }
+
+.stApp { background-color:#FFFFFF; color:var(--ink); }
+.stApp h1, .stApp h2, .stApp h3, .stApp h4, .stApp h5, .stApp h6 { color:var(--ink-strong); }
+.stApp p, .stApp li, .stApp label, .stApp th, .stApp td, .stApp code { color:var(--ink); }
+.stApp [data-testid="stMetricValue"] { color:var(--ink-strong); }
+.stApp [data-testid="stMetricLabel"], .stApp [data-testid="stCaptionContainer"] { color:var(--ink-muted); }
+
+[data-testid="stSidebar"] { background-color:#F7F9FC; color:var(--ink); }
+[data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3 { color:var(--ink-strong); }
