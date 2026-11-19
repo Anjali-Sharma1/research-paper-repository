@@ -1,38 +1,7 @@
-# Lists files and folders that Git must never track for the frontend.
-
-# Secrets and environment -----------------------------------------------------
-# .env.example stays tracked as the template; real values never do.
 .env
-.env.*
-!.env.example
-.streamlit/secrets.toml
-
-# Runtime data store ----------------------------------------------------------
-# views/data/ is the CSV "database" written by auth_utils.py and repo_store.py.
-# users.csv holds real emails, salts and password hashes; the rest is live app
-# data plus the uploaded PDFs. None of it belongs in version control.
-views/data/
-
-# Virtual environment ---------------------------------------------------------
-myenv/
+uploads/
+__pycache__/
+*.pyc
 venv/
 .venv/
-env/
-
-# Python ----------------------------------------------------------------------
-__pycache__/
-*.py[cod]
-*.egg-info/
-.pytest_cache/
-.mypy_cache/
-.ipython/
-.jupyter/
-
-# Logs ------------------------------------------------------------------------
 *.log
-
-# Editor and OS ---------------------------------------------------------------
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
